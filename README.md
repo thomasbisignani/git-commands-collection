@@ -1,9 +1,9 @@
 # git-commands-collection
-A collection of Git commands and aliases
+A collection of useful Git commands and aliases
 
 ### Commands
 
-Logs
+#### Logs
 
 | Command                   | Description                                        |
 | ------------------------- | ---------------------------------------------------|
@@ -14,22 +14,24 @@ Logs
 | `git log --no-merges`     | Hide the merge commits from the log output         |
 
 
-Branching
+#### Branching
 
 | Command                   | Description                                                                      |
 | ------------------------- | ---------------------------------------------------------------------------------|
 | `git checkout -`          | Checkout the last branch where you were. _(Note : Alias of `git checkout @{-1}`)_|
 
-Diff
+#### Diff
 
-| Command                   | Description                                             |
-| ------------------------- | --------------------------------------------------------|
-| `git diff --cached`       | Show the changes between the index and the current HEAD |
+| Command                                | Description                                                       |
+| ---------------------------------------| ------------------------------------------------------------------|
+| `git diff --cached`                    | Show the changes between the index and the current HEAD           |
+| `git diff HEAD`                        | Show the changes between the working directory and the HEAD       | 
+| `git diff --name-status <sha1> <sha1>` | Show the changed files names with status between two SHA1 commits |
 
 ### Aliases
 
 ```bash
-[alias]
+[alias]|
 	# Basics
 	co = checkout
 	st = status
