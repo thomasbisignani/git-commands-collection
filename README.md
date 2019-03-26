@@ -13,6 +13,13 @@ Logs
 | `git log --reverse`       | Reverse the order of the log output                |
 | `git log --no-merges`     | Hide the merge commits from the log output         |
 
+
+Branching
+
+| Command                   | Description                                                                      |
+| ------------------------- | ---------------------------------------------------------------------------------|
+| `git checkout -`          | Checkout the last branch where you were. _(Note : Alias of `git checkout @{-1}`)_|
+
 Diff
 
 | Command                   | Description                                             |
