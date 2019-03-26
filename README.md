@@ -16,9 +16,11 @@ A collection of useful Git commands and aliases
 
 #### Branching
 
-| Command                   | Description                                                                      |
-| ------------------------- | ---------------------------------------------------------------------------------|
-| `git checkout -`          | Checkout the last branch where you were. _(Note : Alias of `git checkout @{-1}`)_|
+| Command                      | Description                                                                      |
+| ---------------------------- | ---------------------------------------------------------------------------------|
+| `git checkout -`             | Checkout the last branch where you were. _(Note : Alias of `git checkout @{-1}`)_|
+| `git branch --merged master` | Show all branches already merged into master                                     |
+| `git remote prune origin`    | Remove all remote branches that no longer exist                                  |
 
 #### Diff
 
@@ -31,7 +33,7 @@ A collection of useful Git commands and aliases
 ### Aliases
 
 ```bash
-[alias]|
+[alias]
 	# Basics
 	co = checkout
 	st = status
