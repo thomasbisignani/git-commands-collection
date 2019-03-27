@@ -1,6 +1,15 @@
 # git-commands-collection
 A collection of useful Git commands and aliases
 
+### Table of content
+
+ - [Commands](https://github.com/thomasbisignani/git-commands-collection#commands)
+	 - [Logs](https://github.com/thomasbisignani/git-commands-collection#logs)
+	 - [Branching](https://github.com/thomasbisignani/git-commands-collection#branching)
+	 - [Diff](https://github.com/thomasbisignani/git-commands-collection#diff)
+- [Aliases](https://github.com/thomasbisignani/git-commands-collection#aliases)
+
+
 ### Commands
 
 #### Logs
@@ -39,11 +48,10 @@ A collection of useful Git commands and aliases
 	st = status
 	wtf = status
 	br = branch
-	a = add
 	
 	# Log
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	last = log -1
 	
 	# Resetting
-	undo git reset --soft HEAD^
+	undo = git reset --soft HEAD^
